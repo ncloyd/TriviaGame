@@ -17,11 +17,6 @@ $(document).ready(function() {
 
     var correct = 0;
     var wrong = 0;
- 
-
-
-
-
     function submit() {
         var total = 5;
         var score = 0;
@@ -30,35 +25,14 @@ $(document).ready(function() {
         alert(q1);
     };
 
+$('input').on('click', function(){
+    $("input[type='radio']:selected").val();
+})
 
+if ($("#q1answer:selected").val() == "a") {
+    console.log("A")
+}
 
-
-    // function checkAns() {
-    //     if ($("input[name=option]:checked").val() == allQuestions[currentquestion].correct) {
-    //         correct++;
-    //     };
-    // };
-
-    // setupOptions();
-
-    // $("#next").click(function() {
-    //     event.preventDefault();
-    //     checkAns();
-    //     currentquestion++;
-    // });
-
-    // if (currentquestion < allQuestions.length) {
-    //     setupOptions();
-    //     if (currentquestion == allQuestions.length - 1) {
-    //         $('#next').html("Submit");
-    //         $('#next').click(function() {
-    //             $("#result").html("You correctly answered " + correctAnswers + " out of " + currentquestion + " questions! ").hide();
-    //             $("#result").fadeIn(1500);
-    //         });
-
-    //     };
-
-    // };
 });
 
 

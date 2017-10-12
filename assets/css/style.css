@@ -9,6 +9,16 @@ html{
 	background-color: #020e1e;	
 	color: #f6cc15;
 }
+#form{
+	text-align: left;
+	margin: 0 auto;
+	width: 800px;
+}
+
+
+#q1answer, #q2answer, #q3answer, #q4answer{
+	margin-left: 20px;
+}
 
 #hogwarts{
 	margin: 0 auto;
